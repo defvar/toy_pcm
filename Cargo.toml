@@ -1,0 +1,16 @@
+[package]
+name = "toy_pcm"
+edition = "2018"
+version = "0.1.0"
+authors = ["defvar <def.daisuke@gmail.com>"]
+build = "build.rs"
+
+[lib]
+name = "toy_pcm"
+
+[[bin]]
+name = "toy_pcm"
+path = "./src/bin/audio.rs"
+
+[dependencies]
+portaudio = "0.7.0"
